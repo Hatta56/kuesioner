@@ -1,0 +1,8 @@
+SELECT OrderID, Quantity,
+CASE WHEN ProductID =11 THEN count(Quantity)
+WHEN ProductID = 11 THEN count(Quantity)
+ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails where Quantity='12';
+
+        
